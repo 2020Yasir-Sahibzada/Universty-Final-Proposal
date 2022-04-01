@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
 @import url(footer.css);
 @import url(navigation.css);
 
@@ -30,7 +29,6 @@
 
 /* Text Design */
 #text1 {
-    font-family: 'Righteous';
     font-size: 80px;
     font-weight: bold;
     letter-spacing: 15px;
@@ -39,7 +37,6 @@
 }
 
 #text2 {
-    font-family: 'Pacifico';
     color: white;
     font-size: 27px;
     letter-spacing: 6px;
