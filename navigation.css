@@ -1,0 +1,124 @@
+
+/* In Welcome page navigation Design */
+#navigation-part {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(95, 95, 95);
+}
+ul {
+    position: absolute;
+    width: 540px;
+    right: 40px;
+}
+.list {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 0 20px;
+    font-family: 'Fredoka One';
+}
+
+#navigation-part ul li {
+    list-style: none;
+    display: inline;
+    padding: 7px 4px 7px 4px;
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+
+#navigation-part ul li:hover {
+    background-color: white;
+}
+#navigation-part ul li:hover a {
+    color: darkslategray;
+}
+
+#navigation-part img {
+    position: absolute;
+    left: 100px;
+}
+
+#navigation-part h3 {
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: 'Changa One';
+    font-size: 24px;
+    position: absolute;
+    left: 170px;
+}
+
+
+#iconbar {
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* End of navigation section design */
+
+
+
+/* Media Query */
+@media (max-width: 940px) {
+    #navigation-part img {
+        left: 8px;
+    }
+    #navigation-part h3 {
+        left: 65px;
+    }
+}
+
+
+
+@media (max-width: 870px) {
+    #navigation-part img {
+        height: 45px;
+        width: 45px;
+        left: 10PX;
+    }
+    #navigation-part h3 {
+        font-size: 17px;
+        left: 70px;
+    }
+    ul {
+        right: -90px;
+    }
+    .list {
+        font-size: 12px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    #navigation-part h3 {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #navigation-part {
+        height: 110px;
+    }
+    #navigation-part img {
+        top: 10px;
+        left: 20px;
+    }
+    #navigation-part h3 {
+        visibility: visible;
+        opacity: 1;
+        left: 85px;
+        top: 20px;
+    }
+    #navigation-part ul {
+        top: 72px;
+        left: 15px;
+    }
+}

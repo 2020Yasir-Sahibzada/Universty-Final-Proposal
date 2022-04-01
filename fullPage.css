@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url(footer.css);
+@import url(navigation.css);
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Welcome Page Design */
+#page-part {
+    background: url('Images/pic.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Text Design */
+#text1 {
+    font-family: 'Righteous';
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    animation: text 2s 1;
+    color: white;
+}
+
+#text2 {
+    font-family: 'Pacifico';
+    color: white;
+    font-size: 27px;
+    letter-spacing: 6px;
+    top: -33%;
+    word-spacing: 7px;
+    letter-spacing: 5px;
+    position: relative;
+    top: -130px;
+}
+
+#registred {
+    padding: 25px 60px;
+    background-color: grey;
+    position: relative;
+    top: -224px;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* End of text design */
+
+/* Animation of Welcome page text */
+
+@keyframes text {
+    25% {
+        letter-spacing: 20px;
+    }
+    85% {
+        letter-spacing: 8px;
+    }
+}
+/* End of Welcome Page text animation */
+
+/* Designing Animation Pictures */
+.pic-animation {
+    position: relative;
+    padding: 10px;
+    height: 600px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 170px 170px 170px;
+
+}
+
+.box1 {
+    background: url(Images/p5.jpg) no-repeat center center/cover;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.box2 {
+    background: url(Images/p11.jpg) no-repeat center center/cover;
+    
+}
+.box3 {
+    background: url(Images/p2.jpg) no-repeat center center/cover;
+    grid-column: 3/5;
+}
+.box4 {
+    background: url(Images/p3.jpg) no-repeat center center/cover;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.box5 {
+    background: url(Images/p4.jpg) no-repeat center center/cover;
+}
+.box6{
+    background: url(Images/p1.jpg) no-repeat center center/cover;
+}
+.box7 {
+    background: url(Images/p10.jpg) no-repeat center center/cover;
+}
+.box8 {
+    background: url(Images/p9.jpg) no-repeat center center/cover;
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+#box {
+    transition: .3s;
+}
+#box:hover {
+    transform: scale(1.05);
+}
+/* End of Animation picture Design */
+
+
+
+
+/* Media Query for Make responsible */
+@media (max-width: 870px) {
+    #text1 {
+        position: absolute;
+        top: 140px;
+        font-size: 60px;
+        animation: none;
+        left: 50px;
+        letter-spacing: 10px;
+    }
+    #text2 {
+        position: absolute;
+        top: 240px;
+        left: 60px;
+    }
+    #registred {
+        top: -50px;
+        left: calc(50% - 150px);
+    }
+    .pic-animation {
+        height: 720px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 170px 170px 170px 170px;
+    
+    }
+    .box1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .box2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .box3 {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .box4 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .box5 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #text1 {
+        font-size: 50px;
+        left: 30px;
+    }
+    #text2 {
+        top: 270px;
+        left: 30px;
+    }
+    #registred {
+        padding: 25px 40%;
+        left: 0px;
+    }
+}

@@ -1,0 +1,80 @@
+@import url(footer.css);
+@import url(navigation.css);
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    margin: 30px;
+}
+
+/* Table of student Design */
+#student-table {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+table {
+    position: relative;
+    border-collapse: collapse;
+    width: 1080px;
+    height: 200px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+}
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+    font-family: 'PT Sans';
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#header {
+    background-color: rgb(95, 95, 95);
+    color: #fff;
+}
+
+tr:hover {
+    background-color: lightgray;
+    transform: scale(1.02);
+
+}
+/* End of table student design */
+
+/* Make Responsive table */
+@media only screen and (max-width : 750px) {
+    table {
+        width: 90%;
+    }
+}
+
+/* End of making Responsive */
+
+
+/* Media Query to make Responsive */
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+        word-spacing: 3px;
+    }
+    
+}

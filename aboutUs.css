@@ -1,0 +1,185 @@
+@import url(footer.css);
+@import url(navigation.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* In Welcome page navigation Design */
+
+
+/* text Design */
+#about {
+    font-size: 45px;
+    word-spacing: 5px;
+    letter-spacing: 6px;
+    position: relative;
+    top: 20px;
+}
+/* End of text Disign */
+
+/* Picture which i use unique is */
+#wakil {
+    background: url(Images/wakil.jpg) no-repeat center center/cover;
+}
+#aimal {
+    background: url(Images/aimal.jpg) no-repeat center center/cover;
+}
+#mohib {
+    background: url(Images/mohib.jpg) no-repeat center center/cover;
+}
+#me {
+    background: url(Images/me.jpg) no-repeat center center/cover;
+}
+/* end of Picture */
+
+/* Picture Hover Design by using flexbox */
+.pic-trainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 40px 0 40px 0;
+}
+
+.pic {
+    height: 450px;
+    width: 270px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(199, 199, 188, 0.7);
+    font-weight: bold;
+}
+
+.pic:hover .overlay {
+    opacity: 1;
+}
+/* End of Picture Hovering using flexBox */
+
+
+
+/* Design of Information About Gym Trainer  */
+
+#wakil2 {
+    background: url(Images/wakil2.jpg) no-repeat center center/cover;
+}
+
+#mohib2 {
+    background: url(Images/mohib2.jpg) no-repeat center center/cover;
+}
+
+#aimal2 {
+    background: url(Images/aimal2.jpg) no-repeat center center/cover;
+}
+
+#yasir2 {
+    background: url(Images/yasir2.jpg) no-repeat center center/cover;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 40px 20px 20px 0;
+}
+.circle2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: right;
+    shape-outside: circle();
+    margin: 40px 0 20px 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.trainer-h1 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 30px;
+}
+
+/* End Design of Information About Gym Trainer */
+
+
+
+/* Media Query to make reasponsive */
+@media (max-width: 750px) {
+    .pic {
+        height: 330px;
+    }
+    #about {
+        font-size: 35px;
+        left: -30%;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .pic {
+        height: 290px;
+    }
+    .pic-trainer {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .content {
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .trainer-h1 {
+        font-size: 24px;
+    }
+    .container p {
+        font-size: 15px;
+    }
+    #about {
+        font-size: 30px;
+        left: -30%;
+    }
+}
